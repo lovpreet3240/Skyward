@@ -94,8 +94,11 @@ a {
 .results-table td {
   border: 1px solid #d0d7de;
   padding: 8px;
-  text-align: left;
+  text-align: center;
   width: 33.33%;
+  white-space: normal;
+  word-break: normal;
+  overflow-wrap: normal;
 }
 .results-table th {
   background: #f6f8fa;
@@ -138,6 +141,12 @@ a {
     font-size: 0.85rem;
     padding: 6px;
   }
+    @media (max-width: 600px) {
+  .results-table {
+    font-size: 0.85rem;
+  }
+}
+
 }
 
 }
