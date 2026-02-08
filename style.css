@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: #24292f;
+  background-color: #ffffff;
+  line-height: 1.6;
+}
+
+a {
+  color: #0969da;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 24px;
+}
+
+/* Header */
+.header {
+  border-bottom: 2px solid #d0d7de;
+  background-image: linear-gradient(
+      rgba(246, 248, 250, 0.6),
+      rgba(246, 248, 250, 0.6)
+    ),
+    url("https://wallpaperswide.com/download/old_books_outdoors-wallpaper-2560x1440.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0;
+}
+  
+}
+
+.header h1 {
+  font-size: 2.2rem;
+  margin-bottom: 8px;
+}
+
+.tagline {
+  color: #57606a;
+  margin-bottom: 16px;
+}
+
+.buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.btn {
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+.primary {
+  background: #0969da;
+  color: #fff;
+}
+
+.secondary {
+  border: 1px solid #d0d7de;
+  color: #24292f;
+}
+
+/* Layout */
+.main-layout {
+  display: grid;
+  grid-template-columns: 2.5fr 1fr;
+  gap: 32px;
+  margin-top: 32px;
+}
+
+.content h2 {
+  margin-top: 24px;
+  margin-bottom: 8px;
+}
+
+.content ul {
+  padding-left: 20px;
+}
+.results-table {
+  width: 27.6%;
+  border-collapse: collapse;
+  margin-top: 8px;
+  table-layout: fixed;
+}
+
+.results-table th,
+.results-table td {
+  border: 1px solid #d0d7de;
+  padding: 8px;
+  text-align: left;
+  width: 33.33%;
+}
+
+.results-table th {
+  background: #f6f8fa;
+}
+
+
+/* Sidebar */
+.card {
+  border: 1px solid #d0d7de;
+  border-radius: 6px;
+  padding: 16px;
+  margin-bottom: 16px;
+  background: #ffffff;
+}
+
+/* Footer */
+.footer {
+  border-top: 1px solid #d0d7de;
+  margin-top: 48px;
+  padding: 16px;
+  text-align: center;
+  color: #57606a;
+  font-size: 0.9rem;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .main-layout {
+    grid-template-columns: 1fr;
+  }
+}
