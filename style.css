@@ -90,7 +90,6 @@ a {
   margin-top: 8px;
   table-layout: fixed;
 }
-
 .results-table th,
 .results-table td {
   border: 1px solid #d0d7de;
@@ -98,9 +97,14 @@ a {
   text-align: left;
   width: 33.33%;
 }
-
 .results-table th {
   background: #f6f8fa;
+}
+.results-table th,
+.results-table td {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
 }
 
 
@@ -128,4 +132,12 @@ a {
   .main-layout {
     grid-template-columns: 1fr;
   }
+  @media (max-width: 600px) {
+  .results-table th,
+  .results-table td {
+    font-size: 0.85rem;
+    padding: 6px;
+  }
+}
+
 }
