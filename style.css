@@ -85,7 +85,7 @@ a {
   padding-left: 20px;
 }
 .results-table {
-  width: 27.6%;
+  width: 100%;
   border-collapse: collapse;
   margin-top: 8px;
   table-layout: fixed;
